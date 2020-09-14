@@ -8,6 +8,7 @@ export default function Home() {
                 <h1>Sophie Müller-Uibrig</h1>
                 <h2 id="position">Junior Web Developer</h2>
             </div>
+            <div id="circle"></div>
             <div className="links-wrapper">
                 <Link to="/about/">about</Link>
                 <a
