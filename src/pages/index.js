@@ -1,7 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "gatsby";
 
 export default function Home() {
+    const palette = [
+        "lightcoral",
+        "lightsalmon",
+        "lightseagreen",
+        "lightskyblue",
+        "lightpink",
+    ];
+
+    function color() {
+        return palette[Math.floor(Math.random() * palette.length)];
+    }
+
+    useEffect(() => {
+        const links = document.querySelectorAll(".color-link");
+        links.forEach((l) => {
+            l.style.color = color();
+        });
+    });
+
     return (
         <div className="content-wrapper" id="center">
             <div className="content-wrapper" id="name-title">
@@ -9,32 +28,50 @@ export default function Home() {
                 <h2 id="position">Junior Web Developer</h2>
             </div>
             <div id="circle-wrapper">
-                <div id="circle"></div>
+                <div id="circle">&lt;h1&gt;Hi!&lt;/h1&gt;</div>
             </div>
             <div id="short-bio">
-                Hi! I'm Sophie a Junior Web Developer with a background in
-                Linguistics. Frameworks and libraries I currently enjoy working
-                with are: React.js, Gatsby, Vue.js, jQuery, Handlebars,
-                Node.js/Express, Jest. I'm also in the process of learning
-                TypeScript.
-            </div>
-            <div className="links-wrapper">
-                <Link to="/about/">about</Link>
+                I'm Sophie a Junior Web Developer with a{" "}
+                <Link className="color-link" to="/about/">
+                    background
+                </Link>{" "}
+                in Linguistics. Find my code and latest
+                projects on{" "}
                 <a
                     href="https://github.com/smuibrig"
+                    className="color-link"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
                     GitHub
                 </a>
-                <a href={"/CV.pdf"} download="CV-sophie-mueller-uibrig.pdf">
+                . If you'd like to find out more about my professional
+                experience you can either download my{" "}
+                <a
+                    href={"/CV.pdf"}
+                    className="color-link"
+                    download="CV-sophie-mueller-uibrig.pdf"
+                >
                     CV
                 </a>
-                <a href="https://www.linkedin.com/in/sophiemulleruibrig/">
+                , or visit my{" "}
+                <a
+                    className="color-link"
+                    href="https://www.linkedin.com/in/sophiemulleruibrig/"
+                >
                     LinkedIn
+                </a>{" "}
+                profile. Interested in working with me? Feel free to {"  "}
+                <a
+                    className="color-link"
+                    href="mailto:sophiemulleruibrig@gmail.com"
+                >
+                    reach out
                 </a>
-                <a href="mailto:sophiemulleruibrig@gmail.com">mail</a>
+                .
             </div>
         </div>
     );
 }
+
+
