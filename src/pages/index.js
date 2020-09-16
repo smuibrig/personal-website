@@ -35,8 +35,7 @@ export default function Home() {
                 <Link className="color-link" to="/about/">
                     background
                 </Link>{" "}
-                in Linguistics. Find my code and latest
-                projects on{" "}
+                in Linguistics. Find my code and latest projects on{" "}
                 <a
                     href="https://github.com/smuibrig"
                     className="color-link"
@@ -45,8 +44,8 @@ export default function Home() {
                 >
                     GitHub
                 </a>
-                . If you'd like to find out more about my professional
-                experience you can either download my{" "}
+                . To learn about my education and professional experience you
+                can either download my{" "}
                 <a
                     href={"/CV.pdf"}
                     className="color-link"
@@ -73,5 +72,3 @@ export default function Home() {
         </div>
     );
 }
-
-
