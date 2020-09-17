@@ -44,8 +44,7 @@ export default function Home() {
                 >
                     GitHub
                 </a>
-                . To learn about my education and professional experience you
-                can either download my{" "}
+                . To learn about my education and professional experience either download my{" "}
                 <a
                     href={"/CV.pdf"}
                     className="color-link"

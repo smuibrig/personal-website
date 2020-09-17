@@ -15,7 +15,7 @@ export default function About() {
                 </p>
                 <p className="about-section">
                     After gaining some professional experience in Communications
-                    and Marketing in the Berlin tech sector, I decided that I
+                    and Marketing in the Berlin tech sector, I realised that I
                     would like to get my hands dirty and build technologies,
                     rather than market them.
                 </p>
@@ -23,9 +23,7 @@ export default function About() {
                     So in the beginning of 2020 I quit my job to fully commit to
                     learn how to program and build web apps. As a linguist I put
                     careful consideration into which language to focus on at
-                    this stage. JavaScript made the cut: is one of the core
-                    technologies of the web, it is the only programming language
-                    that enables interactive web pages. With the help of
+                    this stage. JavaScript made the cut: it is the only programming language that enables interactive web pages and is thereby one of the core technologies of the web. And with the help of
                     cross-platform runtime engines like Node.js also server-side
                     code can be written in JavaScript.
                 </p>
