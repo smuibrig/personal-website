@@ -99,7 +99,10 @@ body {
 
 @media (max-width: 600px) {
     #name {
-        font-size: 30px;
+        font-size: 25px;
+    }
+    #profession {
+        font-size: 20px;
     }
     #short-bio {
         max-width: 98%;
