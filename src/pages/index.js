@@ -24,8 +24,8 @@ export default function Home() {
     return (
         <div className="content-wrapper" id="center">
             <div className="content-wrapper" id="name-title">
-                <h1>Sophie Müller-Uibrig</h1>
-                <h2 id="position">Junior Web Developer</h2>
+                <h1 id="name">Sophie Müller-Uibrig</h1>
+                <h2 id="profession">Junior Web Developer</h2>
             </div>
             <div id="circle-wrapper">
                 <div id="circle">&lt;h1&gt;Hi!&lt;/h1&gt;</div>
