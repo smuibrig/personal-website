@@ -32,7 +32,7 @@ export default function Home() {
             </div>
             <div id="short-bio">
                 I'm Sophie a Junior Web Developer with a{" "}
-                <Link className="color-link" to="/about/">
+                <Link palette={palette} className="color-link" to="/about/">
                     background
                 </Link>{" "}
                 in Linguistics. Find my code and latest projects on{" "}
@@ -48,7 +48,7 @@ export default function Home() {
                 <a
                     href={"/CV.pdf"}
                     className="color-link"
-                    download="CV-sophie-mueller-uibrig.pdf"
+                    download="CV.pdf"
                 >
                     CV
                 </a>
