@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { PageProps } from "gatsby"; 
 import { setColor, palette } from "../utils";
 
 export default function About() {
