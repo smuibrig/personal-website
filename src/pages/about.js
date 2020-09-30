@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { setColor, palette } from "./utils";
+import { setColor, palette } from "../utils";
 
 export default function About() {
     useEffect(() => {

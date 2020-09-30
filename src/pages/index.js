@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "gatsby";
-import { setColor, palette } from "./utils";
+import { setColor, palette } from "../utils";
 
 export default function Home() {
     
