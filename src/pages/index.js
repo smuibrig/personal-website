@@ -1,23 +1,13 @@
 import React, { useEffect } from "react";
 import { Link } from "gatsby";
+import { setColor, palette } from "./utils";
 
 export default function Home() {
-    const palette = [
-        "lightcoral",
-        "lightsalmon",
-        "lightseagreen",
-        "lightskyblue",
-        "lightpink",
-    ];
-
-    function color() {
-        return palette[Math.floor(Math.random() * palette.length)];
-    }
-
+    
     useEffect(() => {
         const links = document.querySelectorAll(".color-link");
         links.forEach((l) => {
-            l.style.color = color();
+            l.style.color = setColor(palette);
         });
     });
 
@@ -44,12 +34,9 @@ export default function Home() {
                 >
                     GitHub
                 </a>
-                . To learn about my education and professional experience either download my{" "}
-                <a
-                    href={"/CV.pdf"}
-                    className="color-link"
-                    download="CV.pdf"
-                >
+                . To learn about my education and professional experience either
+                download my{" "}
+                <a href={"/CV.pdf"} className="color-link" download="CV.pdf">
                     CV
                 </a>
                 , or visit my{" "}

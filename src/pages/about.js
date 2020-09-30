@@ -1,47 +1,101 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { setColor, palette } from "./utils";
 
 export default function About() {
+    useEffect(() => {
+        const links = document.querySelectorAll(".color-link");
+        links.forEach((l) => {
+            l.style.color = setColor(palette);
+        });
+    });
+
     return (
         <div>
             <div className="content-wrapper">
                 <h3>About</h3>
                 <p className="about-section">
-                    My interest in coding first sparked while finishing my MA in
-                    Communications and Linguistics in 2019, when I enrolled in a
-                    Computational Linguistics course. It entailed natural
-                    language processing with python. Back then I wrote my first
-                    lines of code and got a hunch of how powerful a tool
-                    programming is.
+                    My love for coding first sparked while finishing my{" "}
+                    <a
+                        className="color-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.uni-potsdam.de/de/studium/studienangebot/masterstudium/master-a-z/linguistik-kommunikation-variation-mehrsprachigkeit-master"
+                    >
+                        MA in Communications and Linguistics
+                    </a>{" "}
+                    when I enrolled in a Computational Linguistics course which
+                    entailed language processing with Python.
                 </p>
                 <p className="about-section">
-                    After gaining some professional experience in Communications
-                    and Marketing in the Berlin tech sector, I realised that I
-                    would like to get my hands dirty and build technologies,
-                    rather than market them.
+                    After gaining some professional experience in Marketing and
+                    Communications in the Berlin tech sector, I realised that I
+                    would like to learn the craft of building web applications
+                    myself.
                 </p>
                 <p className="about-section">
-                    So in the beginning of 2020 I quit my job to fully commit to
-                    learn how to program and build web apps. As a linguist I put
-                    careful consideration into which language to focus on at
-                    this stage. JavaScript made the cut: it is the only programming language that enables interactive web pages and is thereby one of the core technologies of the web. And with the help of
-                    cross-platform runtime engines like Node.js also server-side
-                    code can be written in JavaScript.
+                    I quit my job and fully committed to learning how to
+                    program. As a Linguist, I put careful consideration into
+                    which programming language to focus on. JavaScript made the
+                    cut: it is the core technology that empowers interactive web
+                    applications, both on the frontend and server side with
+                    Node.js.
                 </p>
                 <p className="about-section">
-                    Since Web Development comprises a number of different
-                    frameworks and libraries and offers countless resources to
-                    learn them, I finally came to a point where I sought
-                    guidance in my very personal study endeavour. So I did my
-                    research and decided to enroll at SPICED Academy, an intense
-                    three months WebDev bootcamp based in Berlin.
+                    Since Web technologies, frameworks and libraries are vast
+                    and numerous, I sought guidance in my study endeavour and
+                    after researching different alternatives, I enrolled at{" "}
+                    <a
+                        className="color-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.spiced-academy.com/en"
+                    >
+                        SPICED Academy
+                    </a>{" "}
+                    , an intense three months bootcamp based in Berlin.
                 </p>
                 <p className="about-section">
-                    After building my first full stack web apps, working with
-                    third party APIs and using frontend frameworks such as
-                    React.js, Vue.js and Gatsby I'm ready to learn more on a job
-                    from experienced developers, who enjoy to mentor an avid
-                    learner like myself.
+                    After building my first{" "}
+                    <a
+                        href="https://jump-petition.herokuapp.com/register"
+                        className="color-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        full stack web apps
+                    </a>
+                    , working with{" "}
+                    <a
+                        href="https://github.com/smuibrig/millennial-terminal"
+                        className="color-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        third party APIs
+                    </a>{" "}
+                    and using frontend frameworks such as React.js, Vue.js and
+                    Gatsby, I'm ready to learn more on the job from experienced
+                    colleagues while helping the team I’d join make steady
+                    progress on their goals. Please have a look at some of my
+                    previous code on{" "}
+                    <a
+                        href="https://github.com/smuibrig"
+                        className="color-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub
+                    </a>
+                    .
                 </p>
+                <a
+                    href="https://sophiecod.es"
+                    className="color-link"
+                    rel="noopener noreferrer"
+                    id="go-back-link"
+                >
+                    Go back
+                </a>
             </div>
         </div>
     );

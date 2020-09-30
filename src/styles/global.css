@@ -32,6 +32,7 @@ body {
 
 .about-section {
     max-width: 35%;
+    text-align: justify;
 }
 
 #circle-wrapper {
@@ -52,6 +53,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#go-back-link {
+    margin-top: 8px; 
 }
 
 @keyframes growingcircle {
@@ -109,6 +114,5 @@ body {
     }
     .about-section {
         max-width: 98%;
-        text-align: justify;
     }
 }
