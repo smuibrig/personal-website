@@ -1,5 +1,6 @@
+import { AnyAaaaRecord } from "dns";
 
-export function setColor(colors) {
+export function setColor(colors: Array<string>):string {
     return colors[Math.floor(Math.random() * colors.length)];
 }
 

@@ -3,9 +3,8 @@ import { Link } from "gatsby";
 import { setColor, palette } from "../utils";
 
 export default function Home() {
-    
     useEffect(() => {
-        const links = document.querySelectorAll(".color-link");
+        const links = document.querySelectorAll<HTMLElement>(".color-link");
         links.forEach((l) => {
             l.style.color = setColor(palette);
         });
@@ -22,7 +21,7 @@ export default function Home() {
             </div>
             <div id="short-bio">
                 I'm Sophie a Junior Web Developer with a{" "}
-                <Link palette={palette} className="color-link" to="/about/">
+                <Link className="color-link" to="/about/">
                     background
                 </Link>{" "}
                 in Linguistics. Find my code and latest projects on{" "}

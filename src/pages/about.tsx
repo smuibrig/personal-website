@@ -1,10 +1,9 @@
 import React, { useEffect } from "react";
-import { PageProps } from "gatsby"; 
 import { setColor, palette } from "../utils";
 
 export default function About() {
     useEffect(() => {
-        const links = document.querySelectorAll(".color-link");
+        const links = document.querySelectorAll<HTMLElement>(".color-link");
         links.forEach((l) => {
             l.style.color = setColor(palette);
         });
