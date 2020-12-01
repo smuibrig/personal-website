@@ -74,9 +74,7 @@ export default function About() {
                         third party APIs
                     </a>{" "}
                     and using frontend frameworks such as React.js, Vue.js and
-                    Gatsby, I'm ready to learn more on the job from experienced
-                    colleagues while helping the team I’d join make steady
-                    progress on their goals. Please have a look at some of my
+                    Gatsby, I joined elbstack. elbstack is a Hamburg based web agency where I learn more about Web Development on the job from my experienced colleagues while supporting the team with the agency work. Please have a look at some of my
                     previous code on{" "}
                     <a
                         href="https://github.com/smuibrig"

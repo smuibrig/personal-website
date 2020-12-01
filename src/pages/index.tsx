@@ -20,7 +20,11 @@ export default function Home() {
                 <div id="circle">&lt;h1&gt;Hi!&lt;/h1&gt;</div>
             </div>
             <div id="short-bio">
-                I'm Sophie a Junior Web Developer with a{" "}
+                I'm Sophie, a Junior Web Developer at{" "}
+                <a className="color-link" href="https://elbstack.com/en/">
+                    elbstack
+                </a>{" "}
+                with a{" "}
                 <Link className="color-link" to="/about/">
                     background
                 </Link>{" "}
