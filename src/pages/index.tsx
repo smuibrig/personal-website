@@ -126,7 +126,12 @@ export default function Home() {
                 </CircleContainer>
                 <BioContainer>
                     I'm Sophie, a Junior Software Engineer at{" "}
-                    <a className="color-link" href="https://elbstack.com/en/">
+                    <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="color-link"
+                        href="https://elbstack.com/en/"
+                    >
                         elbstack
                     </a>{" "}
                     with a{" "}
