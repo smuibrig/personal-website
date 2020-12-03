@@ -150,9 +150,9 @@ export default function Home() {
                     . To learn about my education and professional experience
                     either download my{" "}
                     <a
-                        href={"/CV.pdf"}
+                        href={"/CV_SOPHIE.pdf"}
                         className="color-link"
-                        download="CV.pdf"
+                        download="CV_SOPHIE.pdf"
                     >
                         CV
                     </a>
