@@ -6,6 +6,9 @@
 
 module.exports = {
     /* Your site config here */
+    siteMetadata: {
+        title: `sophie's website & blog`,
+    },
     plugins: [
         `gatsby-plugin-styled-components`,
         {
@@ -21,6 +24,19 @@ module.exports = {
                 isTSX: true, // defaults to false
                 jsxPragma: `React`, // defaults to "React"
                 allExtensions: true, // defaults to false
+            },
+        },
+        {
+            resolve: `gatsby-plugin-mdx`,
+            options: {
+                extensions: [`.mdx`, `.md`],
+            },
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `posts`,
+                path: `${__dirname}/src/posts`,
             },
         },
     ],
