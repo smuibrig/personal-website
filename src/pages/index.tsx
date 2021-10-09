@@ -119,13 +119,13 @@ export default function Home() {
             <ContentContainer>
                 <Container>
                     <Name>Sophie Müller-Uibrig</Name>
-                    <Profession>Junior Software Engineer</Profession>
+                    <Profession>Software Engineer</Profession>
                 </Container>
                 <CircleContainer>
                     <Circle>&lt;h1&gt;Hi!&lt;/h1&gt;</Circle>
                 </CircleContainer>
                 <BioContainer>
-                    I'm Sophie, a Junior Software Engineer at{" "}
+                    I'm Sophie, a Software Engineer at{" "}
                     <a
                         target="_blank"
                         rel="noopener noreferrer"

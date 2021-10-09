@@ -3,7 +3,7 @@ import { setColor, palette } from "../utils";
 import { PageContainer, Container } from "./index";
 import styled from "styled-components";
 
-const AboutParagraph = styled.p`
+export const AboutParagraph = styled.p`
     max-width: 35%;
     text-align: justify;
     @media (max-width: 600px) {
