@@ -16,6 +16,13 @@ module.exports = {
             },
         },
         {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `blog`,
+                path: `${__dirname}/src/blog/`,
+            },
+        },
+        {
             resolve: `gatsby-plugin-typescript`,
             options: {
                 isTSX: true, // defaults to false
@@ -23,5 +30,6 @@ module.exports = {
                 allExtensions: true, // defaults to false
             },
         },
+        `gatsby-transformer-remark`
     ],
 };
