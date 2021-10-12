@@ -170,7 +170,9 @@ export default function Home() {
                     >
                         reach out
                     </a>
-                    .
+                    . On my{" "}<Link className="color-link" to="/blog/">
+                    blog
+                </Link>{" "} I write about my most recent learnings and things that interest me.
                 </BioContainer>
             </ContentContainer>
         </PageContainer>
