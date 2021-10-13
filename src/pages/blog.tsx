@@ -1,26 +1,36 @@
 import React from "react";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
+import { PageContainer, Container } from "../styles/styles";
+import styled from "styled-components";
+import PostListing from "../components/PostListing";
+
+const Header = styled.h1`
+  margin-top: 80px;
+`;
 
 export default function Blog({ data }: any) {
   const { posts } = data.blog;
 
   return (
-    <div>
-      <h1>Posts</h1>
-
-      {posts.map((post: any) => (
-        <article key={post.id}>
-          <Link to={post.fields.slug}>
-            <h2>{post.frontmatter.title}</h2>
-          </Link>
-          {post.frontmatter.author}, {post.frontmatter.date}
-          <p>{post.excerpt}</p>
-        </article>
-      ))}
-      <a href="https://sophiecod.es" rel="noopener noreferrer">
-        Go back
-      </a>
-    </div>
+    <PageContainer>
+      <Container>
+        <Header>Posts</Header>
+        {posts.map((post: any) => (
+          <PostListing
+            key={post.id}
+            slug={post.fields.slug}
+            title={post.frontmatter.title}
+            date={post.frontmatter.date}
+            excerpt={post.excerpt}
+          />
+        ))}
+        <Container>
+          <a href="https://sophiecod.es" rel="noopener noreferrer">
+            Go back
+          </a>
+        </Container>
+      </Container>
+    </PageContainer>
   );
 }
 

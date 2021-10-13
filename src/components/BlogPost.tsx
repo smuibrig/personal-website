@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import Img from "gatsby-image";
 import { PageContainer, Container } from "../styles/styles";
 import styled from "styled-components";
@@ -8,6 +8,7 @@ const TextContainer = styled.div`
   max-width: 600px;
   margin-bottom: 50px;
   text-align: justify;
+  align-items: center;
   @media (max-width: 600px) {
     max-width: 98%;
   }
@@ -15,7 +16,7 @@ const TextContainer = styled.div`
 
 const HeaderContainer = styled(Container)`
   margin: 80px 0;
-`
+`;
 
 export default function BlogPost({ data }: any) {
   const post = data.markdownRemark;
@@ -33,6 +34,15 @@ export default function BlogPost({ data }: any) {
           {featuredImgFluid && <Img fluid={featuredImgFluid} />}
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </TextContainer>
+        <Container>
+          <a
+            style={{ color: "lightcoral" }}
+            href="https://sophiecod.es"
+            rel="noopener noreferrer"
+          >
+            sophiecod.es
+          </a>
+        </Container>
       </Container>
     </PageContainer>
   );

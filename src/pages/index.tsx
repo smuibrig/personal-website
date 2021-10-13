@@ -3,19 +3,14 @@ import { Link } from "gatsby";
 import { setColor, palette } from "../styles/utils";
 import styled from "styled-components";
 import AnimatedCircle from "../components/Circle";
-import { PageContainer, Container } from "../styles/styles";
+import {
+  PageContainer,
+  Container,
+  TextContainer as BioContainer,
+} from "../styles/styles";
 
 const ContentContainer = styled(Container)`
   margin-top: 80px;
-`;
-
-const BioContainer = styled.div`
-  max-width: 400px;
-  margin-bottom: 50px;
-  text-align: justify;
-  @media (max-width: 600px) {
-    max-width: 98%;
-  }
 `;
 
 const Name = styled.h1`

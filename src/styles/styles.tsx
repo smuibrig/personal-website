@@ -12,3 +12,12 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
 `;
+
+export const TextContainer = styled.div`
+  max-width: 400px;
+  margin-bottom: 50px;
+  text-align: justify;
+  @media (max-width: 600px) {
+    max-width: 98%;
+  }
+`;
