@@ -1,26 +1,13 @@
 import React, { useEffect } from "react";
 import { Link } from "gatsby";
-import { setColor, palette } from "../utils";
+import { setColor, palette } from "../styles/utils";
 import styled from "styled-components";
 import AnimatedCircle from "../components/Circle";
-
-export const PageContainer = styled.div`
-  box-sizing: border-box;
-  font-family: "Roboto Mono", monospace;
-  display: flex;
-  justify-content: center;
-`;
-
-export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
+import { PageContainer, Container } from "../styles/styles";
 
 const ContentContainer = styled(Container)`
   margin-top: 80px;
 `;
-
 
 const BioContainer = styled.div`
   max-width: 400px;
@@ -44,7 +31,6 @@ const Profession = styled.h2`
     font-size: 20px;
   }
 `;
-
 
 export default function Home() {
   useEffect(() => {
